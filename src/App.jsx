@@ -1,5 +1,5 @@
-// App.jsx
-import { useStae, useEffect } from 'react';
+// src/App.jsx
+import { useState, useEffect } from 'react';
 import TodoInput from './component/TodoInput';
 import TodoList from './component/TodoList';
 
@@ -17,7 +17,6 @@ export default function App() {
 
     // C : 할 일 추가
     const addTodo = (Text) => {
-        const addTodo = (text) => {
             const clean = text.trim();
             if (!clean) return; // 빈 문자열은 추가하지 않음
             setTodos([
@@ -25,15 +24,14 @@ export default function App() {
                 {
                     id: Date.now(),
                     text: clean,
-                    done: false
+                    completed: false
                 }
             ]);
         };
-    };
 
     return (
         <div style={{ padding: 20 }}>
-            <h1>🌱아주 기본 To-Do (R & C)</h1>
+            <h1>🌱RC 연습용 Todo</h1>
 
             {/* C: 자식에게 "추가하기 리모컨" 전달 */}
             <TodoInput addTodo={addTodo} />
