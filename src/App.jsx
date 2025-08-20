@@ -1,7 +1,7 @@
 // src/App.jsx
 import { useState, useEffect } from 'react';
-import TodoInput from './component/TodoInput';
-import TodoList from './component/TodoList';
+import TodoInput from './component/TodoInput.jsx';
+import TodoList from './component/TodoList.jsx';
 
 export default function App() {
     // R : 앱 켤 때 할 일 목록을 불러오기(없으면 빈 배열 [])
@@ -16,7 +16,7 @@ export default function App() {
     }, [todos]);
 
     // C : 할 일 추가
-    const addTodo = (Text) => {
+    const addTodo = (text) => {
             const clean = text.trim();
             if (!clean) return; // 빈 문자열은 추가하지 않음
             setTodos([

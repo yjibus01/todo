@@ -1,5 +1,5 @@
 // src/component/TodoList.jsx (Read 전용)
-export default function TodoLlist({ todos }) {
+export default function Todolist({ todos }) {
     // 메뉴판이 비었으면
     if (!todos.length) return <p>아직 아무것도 없어요 🙌</p>;
 
