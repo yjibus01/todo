@@ -146,11 +146,14 @@ html, body {
     margin-bottom: 20px;
 }
 
-.todo-count {
-    margin: 0;
-    font-size: 1.2em;
-    color: #555;
-    font-weight: 600;
+.todo-content {
+    display: flex;
+    align-items: center;
+}
+
+.todo-date {
+    margin-left: auto;
+    white-space: nowrap;
 }
 
 /* 반응형 디자인 */
