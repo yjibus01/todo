@@ -15,7 +15,6 @@ html, body {
     max-width: 700px;
     margin: 0 auto;
     padding: 20px;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     min-height: 100vh;
 }
 
@@ -23,10 +22,8 @@ html, body {
 .app-header {
     text-align: center;
     margin-bottom: 20px;
-    background: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .app-title {
@@ -102,6 +99,14 @@ html, body {
     font-style: italic;
 }
 
+:where(.css-dev-only-do-not-override-1v28nim).ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):hover, :where(.css-dev-only-do-not-override-1v28nim).ant-btn-variant-dashed:not(:disabled):not(.ant-btn-disabled):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 6px #6eaa5b;
+  color: white;
+  border-color: #4e9640;
+  background: #4e9640;
+}
+
 .add-button {
     padding: 15px 25px;
     background: #4e9640;
@@ -117,21 +122,6 @@ html, body {
 
 }
 
-.add-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 3px 8px #7ba872;
-    background: #4e9640;
-}
-
-/* 버튼 호버 커스터마이징 */
-
-:where(.css-dev-only-do-not-override-1v28nim).ant-btn.ant-btn-variant-outlined.add-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 3px 8px #7ba872;
-  background: #4e9640;
-  color: white;
-}
-
 .add-button:active {
     transform: translateY(-1px);
 }
@@ -144,6 +134,10 @@ html, body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     text-align: center;
     margin-bottom: 20px;
+}
+
+.todo-count {
+    margin: 0 auto;
 }
 
 .todo-content {
