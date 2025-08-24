@@ -1,6 +1,6 @@
 // src/component/TodoInput2.jsx
 import { useState } from 'react';
-import { Input, Button } from 'antd';
+import { Input } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 
 export default function TodoInput2({ onAddTodo }) {
@@ -30,10 +30,10 @@ export default function TodoInput2({ onAddTodo }) {
                     allowClear // 입력창에 X 버튼 추가
                     className="todo-input"
                 />
-                <Button onClick={handleAdd} className="add-button">
+                <button onClick={handleAdd} className="add-button">
                     <PlusOutlined style={{ marginRight: 3 }} />
                     추가
-                </Button>
+                </button>
             </div>
         </div>
     );

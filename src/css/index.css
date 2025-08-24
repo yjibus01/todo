@@ -99,14 +99,6 @@ html, body {
     font-style: italic;
 }
 
-:where(.css-dev-only-do-not-override-1v28nim).ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):hover, :where(.css-dev-only-do-not-override-1v28nim).ant-btn-variant-dashed:not(:disabled):not(.ant-btn-disabled):hover {
-  transform: translateY(-3px);
-  box-shadow: 0 3px 6px #6eaa5b;
-  color: white;
-  border-color: #4e9640;
-  background: #4e9640;
-}
-
 .add-button {
     padding: 15px 25px;
     background: #4e9640;
@@ -120,6 +112,12 @@ html, body {
     white-space: nowrap;
     height: 50px;
 
+}
+
+.add-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 8px #7ba872;
+    background: #4e9640;
 }
 
 .add-button:active {
